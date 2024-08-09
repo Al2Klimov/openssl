@@ -1430,7 +1430,7 @@ $multilib     =
 
 *** darwin-i386-cc
 $cc           = cc
-$cflags       = -arch i386 -O3 -fomit-frame-pointer -DL_ENDIAN
+$cflags       =  -O3 -fomit-frame-pointer -DL_ENDIAN
 $unistd       = 
 $thread_cflag = -D_REENTRANT
 $sys_id       = MACOSX
@@ -1456,7 +1456,7 @@ $perlasm_scheme = macosx
 $dso_scheme   = dlfcn
 $shared_target= darwin-shared
 $shared_cflag = -fPIC -fno-common
-$shared_ldflag = -arch i386 -dynamiclib
+$shared_ldflag =  -dynamiclib
 $shared_extension = .$(SHLIB_MAJOR).$(SHLIB_MINOR).dylib
 $ranlib       = 
 $arflags      = 
@@ -1906,7 +1906,7 @@ $multilib     =
 
 *** debug-ben-macos
 $cc           = cc
-$cflags       = -Wall -pedantic -DPEDANTIC -Wno-long-long -Wsign-compare -Wmissing-prototypes -Wshadow -Wformat -Werror -DCRYPTO_MDEBUG_ALL -DCRYPTO_MDEBUG_ABORT -DREF_CHECK -DOPENSSL_NO_DEPRECATED -arch i386 -DBN_DEBUG -DCONF_DEBUG -DDEBUG_SAFESTACK -DDEBUG_UNUSED -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -O3 -DL_ENDIAN -g3 -pipe
+$cflags       = -Wall -pedantic -DPEDANTIC -Wno-long-long -Wsign-compare -Wmissing-prototypes -Wshadow -Wformat -Werror -DCRYPTO_MDEBUG_ALL -DCRYPTO_MDEBUG_ABORT -DREF_CHECK -DOPENSSL_NO_DEPRECATED  -DBN_DEBUG -DCONF_DEBUG -DDEBUG_SAFESTACK -DDEBUG_UNUSED -DOPENSSL_THREADS -D_REENTRANT -DDSO_DLFCN -DHAVE_DLFCN_H -O3 -DL_ENDIAN -g3 -pipe
 $unistd       = 
 $thread_cflag = (unknown)
 $sys_id       = 
@@ -2144,7 +2144,7 @@ $multilib     = 64
 
 *** debug-darwin-i386-cc
 $cc           = cc
-$cflags       = -arch i386 -g3 -DL_ENDIAN
+$cflags       =  -g3 -DL_ENDIAN
 $unistd       = 
 $thread_cflag = -D_REENTRANT
 $sys_id       = MACOSX
@@ -2170,7 +2170,7 @@ $perlasm_scheme = macosx
 $dso_scheme   = dlfcn
 $shared_target= darwin-shared
 $shared_cflag = -fPIC -fno-common
-$shared_ldflag = -arch i386 -dynamiclib
+$shared_ldflag =  -dynamiclib
 $shared_extension = .$(SHLIB_MAJOR).$(SHLIB_MINOR).dylib
 $ranlib       = 
 $arflags      = 
